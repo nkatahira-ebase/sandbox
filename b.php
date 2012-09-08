@@ -2,9 +2,9 @@
 
 function bubble_sort(&$data, $ascending)
 {
-  $count = count($data);
-  for($i = 0; $i < ($count - 1); $i++){
-    for($j = $i; $j < $count; $j++){
+  $dataCount = count($data);
+  for($i = 0; $i < ($dataCount - 1); $i++){
+    for($j = $i + 1; $j < $dataCount; $j++){
       if($data[$i] > $data[$j]){
         $tmp = $data[$i];
         $data[$i] = $data[$j];
